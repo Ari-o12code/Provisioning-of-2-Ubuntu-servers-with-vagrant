@@ -1,4 +1,4 @@
-# Altschool Cloud Exam
+# Altschool Cloud Engineering Second Semester Exam
 
 ## Step one: Provisioning of two Ubuntu-based servers using Vagrant
 #### Screenshots;
