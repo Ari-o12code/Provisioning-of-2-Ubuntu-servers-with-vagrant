@@ -13,6 +13,7 @@
 ![testing script on master node](images/testing-script-on-masternode2.jpg)
 
 ## Step three: Using Ansible playbook to execute the bash script on the Slave node.
+The script reads the MySQL root password from the `DB_PASSWORD` environment variable instead of storing it in the file. The playbook asks for it when it runs and passes it to the script.
 ### Screenshots;
 #### Images show successful execution of bash script on slave node with ansible playbook and site accessibility using slave's IP
 ![proof of successful execution of ansible playbook and cronjob](images/proof-of-running-playbook-successfully-and-cronjob-execution.jpg)
