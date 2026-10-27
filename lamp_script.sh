@@ -6,7 +6,7 @@ DB_DATABASE=laravel
 DB_HOST=localhost
 DB_PORT=3306
 DB_USERNAME=root
-DB_PASSWORD=alameenalm
+DB_PASSWORD="${DB_PASSWORD:?Set DB_PASSWORD before running this script}"
 
 # Update package repositories
 sudo add-apt-repository ppa:ondrej/php
