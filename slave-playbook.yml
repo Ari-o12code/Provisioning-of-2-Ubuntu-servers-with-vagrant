@@ -2,9 +2,15 @@
 - name: execute bash script
   hosts: all
   become: true
+  vars_prompt:
+    - name: db_password
+      prompt: "MySQL root password for the slave node"
+      private: true
   tasks:
     - name: Execute LAMP deployment script
       script: /home/vagrant/lamp_script.sh
+      environment:
+        DB_PASSWORD: "{{ db_password }}"
 
     - name: Check if PHP application is accessible
       uri:
